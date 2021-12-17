@@ -1,5 +1,8 @@
 ### ToyP - Mobile Invitation React App 
 
+![intro image](./intro_img.png)
+
+
 ### 설치 
 * npm 8.1.0
 * yarn 1.22.17
