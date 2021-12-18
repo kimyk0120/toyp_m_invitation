@@ -9,6 +9,7 @@ function App() {
         <Fragment>
             <MyName name={"react_2"} />
             <Counter />
+            힝헷
         </Fragment>
         // <MyName  />
     )
