@@ -3,6 +3,34 @@ import React, {Component} from "react";
 class Counter extends Component {
     state = {number_test: 0}
 
+    // Lifecycle test
+    constructor(props) {
+        super(props);
+    }
+
+    componentWillMount() {
+        console.log("componentWillMount (deprecated)")
+    }
+
+    componentDidMount() {
+        console.log("componentDidMount")
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+        // 5 의 배수라면 리렌더링 하지 않음
+        console.log('shouldComponentUpdate');
+        if (nextState.number_test % 5 === 0) return false;
+        return true;
+    }
+
+    componentWillUpdate(nextProps, nextState) {
+        console.log('componentWillUpdate');
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        console.log('componentDidUpdate');
+    }
+
     handleIncrease = () => {
         const {number_test} = this.state;  // {속성이름과 같은이름} 로 해야함
         this.setState(
