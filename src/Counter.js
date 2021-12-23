@@ -1,5 +1,18 @@
 import React, {Component} from "react";
 
+const Problematic = () => {
+    throw(new Error("throw Error"));
+
+    return(
+        <div>
+
+        </div>
+    );
+}
+
+
+
+
 class Counter extends Component {
     state = {number_test: 0}
 
@@ -47,6 +60,12 @@ class Counter extends Component {
         )
     }//.handleDecrease
 
+    componentDidCatch(error, errorInfo) {
+        this.setState({
+            error: true
+        })
+    }
+
     render() {
         return (
             <div>
@@ -54,6 +73,7 @@ class Counter extends Component {
                 {/*{console.log(...this.test_arr)}  /!* 전개 연산자 *!/*/}
                 <h1>counter</h1>
                 <div> val : {this.state.number_test}</div>
+                {this.state.number_test === 4 && <Problematic />}
                 <button onClick={this.handleIncrease}>+</button>
                 <button onClick={this.handleDecrease}>-</button>
             </div>
