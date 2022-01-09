@@ -33,12 +33,21 @@ class App extends Component {
             information: information.concat({id: this.id++, ...data})
         })
     }
+
+    handleRemove = (id) => {
+        const {information} = this.state;
+        this.setState({
+            information: information.filter(info => info.id !== id)
+        })
+    }
+
     render() {
         const {information} = this.state;
         return (
             <div>
                 <PhoneForm phonform_onCreate={this.handleCreate} />
-                <PhoneInfoList data={this.state.information} />
+                <PhoneInfoList data={information}
+                               onRemove={this.handleRemove}/>
                 {/*{JSON.stringify(information)}*/}
             </div>
 
