@@ -18,3 +18,4 @@ const TodoListTemplate = ({form, children}) => {
     );
 }
 
+export default TodoListTemplate
