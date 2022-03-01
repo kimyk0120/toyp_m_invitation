@@ -3,9 +3,15 @@
 ![intro image](./intro_img.png)
 
 
-### 설치 
+### Dependencies  
 * npm 8.1.0
+* node.js
+
+> $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash  
+> $ nvm install --lts
+
 * yarn 1.22.17
+
 
 
 
