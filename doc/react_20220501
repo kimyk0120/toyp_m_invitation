@@ -1,0 +1,15 @@
+
+
+* main flow
+  - 로그인 -> 템플릿리스트 -> 편집 -> 임시저장 / 링크공유하기
+
+* SW architect
+  - reactJS
+  - DB? 몽고DB를 써볼까
+
+- HTML을 직접 장성하지 않고 elements를 생성함
+- ReactDom render
+
+
+
+
