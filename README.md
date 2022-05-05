@@ -26,7 +26,7 @@
 
 * SW architectur
     - reactJS
-    - DB
+    - MongoDB
 
 
 
