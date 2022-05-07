@@ -21,13 +21,16 @@
 * start
 >$ yarn start
 
-* main flow
+### main flow
   - 로그인 -> 템플릿리스트 -> 편집 -> 임시저장 / 링크공유하기
 
-* SW architectur
-    - reactJS
-    - goLang
-    - MongoDB
+### Stack
+  - FE
+    + reactJS
+  - BE  
+    + ~~ goLang or NodeJS ~~
+  - DB
+    + ~~ MongoDB ~~
 
 
 
