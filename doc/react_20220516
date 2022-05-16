@@ -1,0 +1,5 @@
+
+* 변수 중괄gh{}
+* 오토메틱 rerender 트리거링 - React.userState(defaultValue) > value, modifier 
+* unpacking
+  - const x = [1,2,3];  > const [a, b, c] = x;
