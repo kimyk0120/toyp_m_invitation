@@ -1,3 +1,4 @@
 * state가 변경되면 react는 rerender를 수행함
-* jsx는 자바스크립트기 때문에 엘리먼트 속성 class => className, for (label태그 등) => htamFor 로 사용함
+* jsx는 자바스크립트기 때문에 엘리먼트 속성 class => className, for (label태그 등) => htmlFor 로 사용함
+
     
